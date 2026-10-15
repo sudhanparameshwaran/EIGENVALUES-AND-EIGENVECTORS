@@ -15,6 +15,9 @@ To write a python program to find the Eigenvalues and Eigen Vectors
 
 ## Program:
 
+import os
+os.environ["OPENBLAS_NUM_THREADS"]= "1"
+
 import numpy as np
 
 matrix = np.array([[2, 2],
@@ -26,11 +29,8 @@ print("Eigenvalues:", eigenvalues)
 print("Eigenvectors:\n", eigenvectors)
 
 ## Output:
+<img width="1245" height="783" alt="{1FC749A3-BC5F-408C-B089-90132DB37225}" src="https://github.com/user-attachments/assets/34a7f6e0-529a-4845-ba2a-8be21a5d02c7" />
 
-Eigenvalues: [1. 4.]
-Eigenvectors:
- [[-0.89442719 -0.70710678]
- [ 0.4472136  -0.70710678]]
  
 ## Result:
 Thus the Eigenvalue and Eigenvector is successfully solved using python program
